@@ -76,6 +76,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     });
 
+    // Responsive Vanta.js settings for smaller screens
+    const isMobile = window.innerWidth < 768;
+
     // Initialize Vanta.js Interactive WebGL Background
     if (typeof VANTA !== 'undefined') {
         VANTA.NET({
@@ -89,9 +92,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
             scaleMobile: 1.00,
             color: 0x00f2fe,          // Electric Cyan points/lines
             backgroundColor: 0x000000, // Pure Black background
-            points: 12.00,
-            maxDistance: 22.00,
-            spacing: 18.00,
+            points: isMobile ? 5.00 : 12.00,
+            maxDistance: isMobile ? 15.00 : 22.00,
+            spacing: isMobile ? 25.00 : 18.00,
             showDots: true
         });
     }
