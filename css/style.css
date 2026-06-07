@@ -33,30 +33,59 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Backgrounds */
-.bg-abstract {
+/* Ambient Aurora Background */
+.aurora-bg {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    object-fit: cover;
-    z-index: -2;
-    opacity: 0.15;
-    mix-blend-mode: screen;
+    z-index: -10;
+    background: #000000;
+    overflow: hidden;
 }
 
-.bg-waves {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.2;
-    mix-blend-mode: screen;
+.aurora-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.5;
+    animation: orbit 20s linear infinite;
     pointer-events: none;
+}
+
+.aurora-orb-1 {
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(0,242,254,0.35) 0%, transparent 70%);
+    top: -10%;
+    left: -10%;
+    animation-duration: 25s;
+}
+
+.aurora-orb-2 {
+    width: 45vw;
+    height: 45vw;
+    background: radial-gradient(circle, rgba(79,172,254,0.25) 0%, transparent 70%);
+    bottom: -10%;
+    right: -10%;
+    animation-duration: 30s;
+    animation-direction: reverse;
+}
+
+.aurora-orb-3 {
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, rgba(0,100,255,0.2) 0%, transparent 70%);
+    top: 30%;
+    left: 30%;
+    animation-duration: 35s;
+}
+
+@keyframes orbit {
+    0% { transform: rotate(0deg) translateX(5vw) rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) translateX(5vw) rotate(-180deg) scale(1.1); }
+    100% { transform: rotate(360deg) translateX(5vw) rotate(-360deg) scale(1); }
 }
 
 /* Typography */
@@ -186,6 +215,14 @@ nav {
 
 .hero-content {
     z-index: 2;
+}
+
+.hero-description {
+    color: var(--text-secondary);
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
 }
 
 .hero-image-container {
@@ -471,6 +508,10 @@ nav {
         grid-template-columns: 1fr;
         text-align: center;
         padding-top: 120px;
+    }
+    
+    .hero-description {
+        margin: 0 auto 2rem auto;
     }
     
     .hero-image-container {
