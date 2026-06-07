@@ -76,26 +76,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     });
 
-    // Parallax effect for backgrounds
-    gsap.to(".bg-abstract", {
-        yPercent: 30,
-        ease: "none",
-        scrollTrigger: {
-            trigger: "body",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
-
-    gsap.to(".bg-waves", {
-        yPercent: -20,
-        ease: "none",
-        scrollTrigger: {
-            trigger: "body",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
+    // Initialize Vanta.js Interactive WebGL Background
+    if (typeof VANTA !== 'undefined') {
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x01131a,       // Very dark cyan/blue base representing a sleek ocean/surface plot
+            shininess: 60.00,      // High shine for premium feel
+            waveHeight: 15.00,
+            waveSpeed: 0.50,       // Slow and elegant
+            zoom: 0.75
+        });
+    }
 });
