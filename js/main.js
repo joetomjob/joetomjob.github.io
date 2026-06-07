@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // Initialize Vanta.js Interactive WebGL Background
     if (typeof VANTA !== 'undefined') {
-        VANTA.WAVES({
+        VANTA.NET({
             el: "#vanta-bg",
             mouseControls: true,
             touchControls: true,
@@ -87,11 +87,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            color: 0x01131a,       // Very dark cyan/blue base representing a sleek ocean/surface plot
-            shininess: 60.00,      // High shine for premium feel
-            waveHeight: 15.00,
-            waveSpeed: 0.50,       // Slow and elegant
-            zoom: 0.75
+            color: 0x00f2fe,          // Electric Cyan points/lines
+            backgroundColor: 0x000000, // Pure Black background
+            points: 12.00,
+            maxDistance: 22.00,
+            spacing: 18.00,
+            showDots: true
         });
     }
 });
