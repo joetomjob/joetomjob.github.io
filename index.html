@@ -1,539 +1,343 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <div class="mainpage">
-    <head>
-      <meta charset="UTF-8">
-      <title>joetomjob</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="stylesheets/newstylesheet.css" media="screen">
-    </head>
-    <body>
-      <div class="flexrow headersection">
-        <div>
-          <img src="assets/images/IMG_NEW.jpg" alt="" class="myimage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Tom Job | Senior Full-Stack Software Engineer</title>
+    <meta name="description" content="Portfolio of Joe Tom Job, a Senior Full-Stack Software Engineer at Tesla with expertise in Go, Angular, and cloud-native applications.">
+    <meta name="keywords" content="Joe Tom Job, Senior Full-Stack Software Engineer, Tesla, Go, Angular, React, Portfolio">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Abstract AI Generated Backgrounds -->
+    <img src="assets/images/bg_abstract.png" alt="" class="bg-abstract">
+    <img src="assets/images/bg_waves.png" alt="" class="bg-waves">
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">JOE TOM JOB</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        <div style="width: 100%">
-          <div class="name">
-            Joe Tom Job 
-          </div>
-          <div class="flexrow social">
-            <div></div>
-            <div class="flexrow social">
-              <img id='githubicon' src="assets/images/githubicon.svg" alt="" class="socialimage" onclick="sociaimageclick(this)">  
-              <img id='linkedinicon' src="assets/images/linkedinicon.svg" alt="" class="socialimage" onclick="sociaimageclick(this)">  
-              <img id='fbicon' src="assets/images/fbicon.svg" alt="" class="socialimage" onclick="sociaimageclick(this)">  
-              <img id='twittericon' src="assets/images/twittericon.svg" alt="" class="socialimage" onclick="sociaimageclick(this)">  
-              <img id='resumeicon' src="assets/images/resumeicon.jpg" alt="" class="socialimage" onclick="sociaimageclick(this)">  
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="container">
+        <div class="hero-content">
+            <h2 class="subtitle">Hello, I'm</h2>
+            <h1><span class="text-gradient">Joe Tom Job</span></h1>
+            <h2 class="subtitle" style="color: var(--text-primary);">Senior Full-Stack Software Engineer</h2>
+            <p style="color: var(--text-secondary); max-width: 500px; line-height: 1.7; margin-bottom: 2rem; font-size: 1.1rem;">
+                Building scalable, API-driven manufacturing and enterprise applications. Specializing in Go, Angular, and cloud-native solutions that drive real-world impact.
+            </p>
+            
+            <div class="social-links">
+                <a href="https://github.com/joetomjob" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/joetomjob/" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="assets/pdf/resume.pdf" target="_blank" class="social-icon" title="Resume">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
             </div>
-            <div></div>
         </div>
+        <div class="hero-image-container">
+            <img src="assets/images/profile_new.jpg" alt="Joe Tom Job" class="hero-image">
         </div>
-      </div>
-      <div class="bodysection">
-        <div class="flexrow fullheight">
-          <div class="tab flexcol">
-            <button class="tablinks active" onclick="openCity(event, 'About Me')">ABOUT ME</button>
-            <button class="tablinks" onclick="openCity(event, 'Technical Skills')">TECHNICAL SKILLS</button>
-            <button class="tablinks" onclick="openCity(event, 'Experience')">EXPERIENCE</button>
-            <button class="tablinks" onclick="openCity(event, 'Projects')">PROJECTS</button>
-            <button class="tablinks" onclick="openCity(event, 'Education')">EDUCATION</button>
-            <button class="tablinks" onclick="openCity(event, 'ContactMe')">CONTACT ME</button>
-          </div>
-          <div style="overflow: scroll;">
-            <div id="About Me" class="tabcontent" style="display: block; height: 100%;">
-                <div class="panel">
-                    <span class="boldtext">ABOUT ME</span>
-                </div>
-                <div class="aboutpanel myfullimage">
-                  <p style="word-wrap: break-word;">Software Engineer at Tesla with 4+ years of professional software development experience. I'm a full-stack developer, I am proficient at working on all aspects of a web application including front-end and back-end. My area of interests is Web Technologies and Data Science. Overall, I enjoy programming, building products and trying my hands on new technologies.
-                  </p>
-                </div>
-            </div>
-              
-            <div id="Technical Skills" class="tabcontent">
-                <div class="panel">
-                    <span class="boldtext">TECHNICAL SKILLS</span>
-                </div>
-                <div class="aboutpanel">
-                  <div class="chip boldtext" style="color: rgb(145, 193, 255);">LANGUAGES</div>
-                  <div class="flexrow flexwrap">
-                      <div class="chip">Java</div>
-                      <div class="chip">TypeScript</div>
-                      <div class="chip">Javascript</div>
-                      <div class="chip">C#</div>
-                      <div class="chip">Golang</div>
-                      <div class="chip">Coffeescript</div>
-                      <div class="chip">C</div>
-                      <div class="chip">C++</div>
-                      <div class="chip">C#</div>
-                      <div class="chip">Python</div>
-                      <div class="chip">jQuery</div>
-                      <div class="chip">HTML5</div>
-                      <div class="chip">CSS3</div>
-                  </div>
-                  <div class="chip boldtext" style="color: rgb(145, 193, 255);">DATABASE</div>
-                  <div class="flexrow flexwrap">
-                      <div class="chip">MySQL</div>
-                      <div class="chip">SQL Server</div>
-                      <div class="chip">Clickhouse</div>
-                      <div class="chip">PostgreSQL</div>
-                  </div>
-                  <div class="chip boldtext" style="color: rgb(145, 193, 255);">FRAMEWORKS</div>
-                  <div class="flexrow flexwrap">
-                      <div class="chip">Angular 7</div>
-                      <div class="chip">ASP.NET</div>
-                      <div class="chip">MVC</div>
-                      <div class="chip">Websockets</div>
-                      <div class="chip">Kubernetes</div>
-                      <div class="chip">Entity Framework</div>
-                      <div class="chip">Selenium</div>
-                      <div class="chip">Protractor</div>
-                      <div class="chip">Git</div>
-                      <div class="chip">SOAP</div>
-                      <div class="chip">RESTful web services</div>
-                      <div class="chip">RESTful APIs</div>
-                      <div class="chip">TFS</div>
-                      <div class="chip">Numpy</div>
-                      <div class="chip">Pandas</div>
-                      <div class="chip">Sci-kit</div>
-                      <div class="chip">Firebase</div>
-                      <div class="chip">Keras</div>
-                      <div class="chip">OpenGL</div>
-                  </div>
-                  <div class="chip boldtext" style="color: rgb(145, 193, 255);">SOFTWARE PROCESSES AND TOOLS </div>
-                  <div class="flexrow flexwrap">
-                      <div class="chip">Git</div>
-                      <div class="chip">JIRA</div>
-                      <div class="chip">Confluence</div>
-                      <div class="chip">Jenkins</div>
-                      <div class="chip">Stash</div>
-                      <div class="chip">Postman</div>
-                      <div class="chip">Scrum agile software methodology</div>
-                  </div>
-                  <div class="chip boldtext" style="color: rgb(145, 193, 255);">OPERATING SYSTEMS </div>
-                  <div class="flexrow flexwrap">
-                      <div class="chip">Android</div>
-                      <div class="chip">Mac OS X</div>
-                      <div class="chip">Linux</div>
-                      <div class="chip">Windows</div>
-                  </div>
-                </div>
-            </div>
-            <div id="Experience" class="tabcontent">
-              <div class="panel">
-                  <span class="boldtext">EXPERIENCE</span>
-              </div>
-              <div style="height: 2vmin; width: 100%"></div>
-              <button class="accordion" onclick="openAccordian(event, 'tesla')">
-                <div class="flexrow" style="width: 100%;">
-                  <img src="assets/images/teslaicon.svg" alt="" class="teslaiconstyle">
-                  <div class="chipacc">Tesla Motors</div>
-                  <div class="chipacc" style="margin-left: auto">Fremont, CA</div>
-                  <img id="teslaup" src="assets/images/uparrow.svg" alt="" class="upiconstyle">
-                  <img id="tesladown" src="assets/images/downarrow.svg" alt="" class="downiconstyle">
-                </div>
-              </button>
-              <div id="teslapanel" class="subpanel">
-                  <div class="flexrow subexp">
-                  <div class="chipexp">Software Engineer</div>
-                  <div class="chipexp">Jan 2019 - Present</div>
-                </div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Working as part of the factory software team for creating the Manufacturing Operations System application used for orchestrating the entire factory process in Tesla.</li>
-                  </ul> 
-                  <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">Go, Angular 7, Java, TypeScript, Coffeescript, Javascript, Clickhouse, MySQL, Websockets, Kubernetes, SQLite.</div></div></div>
-                </div>
-                <div class="flexrow subexp">
-                  <div class="chipexp">Software Intern</div>
-                  <div class="chipexp">May 2018 - Aug 2018</div>
-                </div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                      <li>Developed an Android application for material management application(MOS) which is being used in Tesla Fremont factory, Gigafactory Nevada, Gigafactory 2 Buffalo, Tesla factory Ireland.</li>
-                      <li>Worked on the Front end team of Factory Software team.</li>
-                  </ul>  
-                  <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">Android, Java, Angular 6, Websockets, Go, Kubernetes, SQLite.</div></div></div>
-                </div>
-                <div class="flexrow subexp">
-                  <div class="chipexp">Software Intern</div>
-                  <div class="chipexp">Jun 2017 - Jan 2018</div>
-                </div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                      <li>Developed an Android application for material management application(MOS).</li>
-                      <li>Developed Functional Test Automation Framework using Selenium for manufacturing and material management applications (MOS, MES, and MMS) used for the production of Tesla S, X and 3.</li>
-                      <li>Support Telsa's mission to accelerate the advent of sustainable transport by bringing compelling mass market electric cars to market as soon as possible.</li>
-                  </ul>  
-                  <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">Android SDK, Java, Javascript, Protractor, TypeScript, Cucumber, Selenium, Jasmine, MySQL, Github, Postman</div></div></div>
-                </div>
-              </div>
-              <div style="height: 2vmin; width: 100%"></div>
-              <button class="accordion" onclick="openAccordian(event, 'rit')">
-                <div class="flexrow" style="width: 100%">
-                  <img src="assets/images/riticon.jpg" alt="" class="riticonstyle">
-                  <div class="chipacc">RIT</div>
-                  <div class="chipacc" style="margin-left: auto">Rochester, NY</div>
-                  <img id="ritup" src="assets/images/uparrow.svg" alt="" class="upiconstyle">
-                  <img id="ritdown" src="assets/images/downarrow.svg" alt="" class="downiconstyle">
-                </div>
-              </button>
-              <div id="ritpanel" class="subpanel">
-                <div class="flexrow subexp">
-                  <div class="chipexp">Graduate Research Assistant</div>
-                  <div class="chipexp">Aug 2018 - Dec 2018</div>
-                </div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Improving the API recommendation tool that uses Statistical learning to study from repetitive code changes and fine-grained changes and predict API's.</li>
-                  </ul> 
-                  <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">Java, Python, BeautifulSoup, Github API.</div></div></div>
-                </div>
-                <div class="flexrow subexp">
-                    <div class="chipexp">Graduate Research Assistant</div>
-                    <div class="chipexp">Jan 2018 - May 2018</div>
-                </div>
-                <div>
-                    <ul style="list-style-type:disc;">
-                        <li> Developed an API recommendation tool that uses Statistical learning to study from repetitive code changes and fine-grained changes and predict API's. </li>
-                      </ul> 
-                      <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">Java, Python, BeautifulSoup, Github API.</div></div></div>
-                </div>
-                <div class="flexrow subexp">
-                    <div class="chipexp">Graduate Research Assistant</div>
-                    <div class="chipexp">Jan 2017 - Jun 2017</div>
-                </div>
-                <div>
-                    <ul style="list-style-type:disc;">
-                        <li> Implemented new protocol for network communication for a NSF funded project.</li>
-                        <li> Designed the algorithm for forwarding the IP packets in the protocol.</li>
-                        <li> Created scripts to automate some of the manual processes.</li>
-                        <li> Cleaned up the entire stack and improved the code readability.</li>
-                      </ul> 
-                      <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">C, Python, Linux, GENI, Emulab, Git</div></div></div>
-                </div>
-              </div>
-              <div style="height: 2vmin; width: 100%"></div>
-              <button class="accordion" onclick="openAccordian(event, 'cts')">
-                <div class="flexrow" style="width: 100%">
-                  <img src="assets/images/cts.png" alt="" class="ctsiconstyle">
-                  <div class="chipacc">Cognizant</div>
-                  <div class="chipacc" style="margin-left: auto">Kochi, IN</div>
-                  <img id="ctsup" src="assets/images/uparrow.svg" alt="" class="upiconstyle">
-                  <img id="ctsdown" src="assets/images/downarrow.svg" alt="" class="downiconstyle">
-                </div>
-              </button>
-              <div id="ctspanel" class="subpanel">
-                <div class="flexrow subexp">
-                  <div class="chipexp">Associate</div>
-                  <div class="chipexp">Jan 2014 - Jul 2016</div>
-                </div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Designed and developed a website which handles end to end visa processing of cognizant.</li>
-                    <li> Developed WCF Web services to transfer data with different teams.</li>
-                    <li> Implemented various features in project using various third party API’s of FedEx, Novacode etc.</li>
-                    <li> Created and tuned SQL queries for the project.</li>
-                  </ul> 
-                  <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">ASP.NET, C#, jQuery, JavaScript, HTML5,CSS3,SQL SERVER 2012,WCF Web services, MVC, RDL.</div></div></div>
-                </div>
-                <div class="flexrow subexp">
-                    <div class="chipexp">Programmer Analyst</div>
-                    <div class="chipexp">Nov 2012 - Jan 2014</div>
-                </div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Designed and developed a website which deals with resource allocation and optimization of all employees of cognizant.</li>
-                    <li> Developed RDLC reports and created queries for the reports.</li>
-                  </ul> 
-                  <div class="technologies"><div class="flexrow"><div class="chipexp">Technologies</div><div class="padng">ASP.NET, C#, jQuery, JavaScript, HTML5,CSS3,SQL SERVER 2012, Entity Framework, RDLC.</div></div></div>
-                </div>
-              </div>
-            </div>
-            <div id="Projects" class="tabcontent">
-              <div class="panel">
-                  <span class="boldtext">ACADEMIC PROJECTS</span>
-              </div>
-              <div style="height: 2vmin; width: 100%"></div>
-              <button class="accordion" onclick="openAccordian(event, 'ritacademic')">
-                <div class="flexrow" style="width: 100%">
-                  <img src="assets/images/riticon.jpg" alt="" class="riticonstyle">
-                  <div class="chipacc">RIT</div>
-                  <div class="chipacc" style="margin-left: auto">Rochester, NY</div>
-                  <img id="ritacademicup" src="assets/images/uparrow.svg" alt="" class="upiconstyle">
-                  <img id="ritacademicdown" src="assets/images/downarrow.svg" alt="" class="downiconstyle">
-                </div>
-              </button>
-              <div id="ritacademicpanel" class="subpanel">
-                <div class="chipaccexp">Autism Study using Virtual reality</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> The study examines the impact of social stimuli on physiological and behavioral regulation, and how these reactions relate to social motivation in children with and without ASD (5-7 yrs).</li>
-                    <li> To study these constructs in a methodologically rigorous and ecologically valid manner, an original 360 film with spatial audio was created to simulate a play group, where child actors become progressively more social with the camera/viewer.</li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">Unity</div>
-                        <div class="chipproj">Ricoh Theta V</div>
-                        <div class="chipproj">Oculus Go</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
+    </section>
 
-                <div class="chipaccexp">Movie Insights</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> This project proposes a predictive model leveraging supervised learning over the IMDb dataset combined with an external movie awards dataset to predict the overall rating of any movie.</li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">Python</div>
-                        <div class="chipproj">Weka</div>
-                        <div class="chipproj">PostgreSQL</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
-
-                <div id="studenthousing" class="chipaccexp pointer" onclick="openLink(this)">Student Housing</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> This is an ios application developed in swift. This application acts as a platform for students looking for housing which includes rent, sublet and roommate requests.</li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">Swift</div>
-                        <div class="chipproj">Xcode</div>
-                        <div class="chipproj">Firebase</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
-
-                <div class="chipaccexp">Multi Node Label Routing Protocol (MNLR)</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Implementing new protocol for network communication for a NSF funded project.</li>
-                    <li> Designed the algorithm for forwarding the IP packets in the protocol.</li>
-                    <li> Created scripts to automate some of the manual processes.</li>
-                    <li> Cleaned up the entire stack and improved the code readability.</li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">C</div>
-                        <div class="chipproj">Python</div>
-                        <div class="chipproj">Linux</div>
-                        <div class="chipproj">GENI</div>
-                        <div class="chipproj">Emulab</div>
-                        <div class="chipproj">Git</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
-
-                <div class="chipaccexp">Food Product Recommender System</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Developed a robust Food Recommender System.</li>
-                    <li> Achieved an accuracy of over 87% accuracy in suggesting the correct food item to the user. </li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">Rattle</div>
-                        <div class="chipproj">R</div>
-                        <div class="chipproj">PostgreSQL</div>
-                        <div class="chipproj">Java</div>
-                        <div class="chipproj">Spring</div>
-                        <div class="chipproj">Maven</div>
-                        <div class="chipproj">Numpy</div>
-                        <div class="chipproj">Pandas</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
-
-                <div class="chipaccexp">Gender Recognition by Voice</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Machine learning techniques were applied on acoustic properties of voice to predict the gender.</li>
-                    <li> Achieved an accuracy of over 97% in predicting the gender using Random Forest Classifier model.</li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">Python</div>
-                        <div class="chipproj">Rattle</div>
-                        <div class="chipproj">Sci-kit</div>
-                        <div class="chipproj">Numpy</div>
-                        <div class="chipproj">Pandas</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
-              </div>
-              <div style="height: 2vmin; width: 100%"></div>
-              <button class="accordion" onclick="openAccordian(event, 'cetacademic')">
-                <div class="flexrow" style="width: 100%">
-                  <img src="assets/images/ceticon.png" alt="" class="ceticonstyle">
-                  <div class="chipacc">CET</div>
-                  <div class="chipacc" style="margin-left: auto">Kerala, IN</div>
-                  <img id="cetacademicup" src="assets/images/uparrow.svg" alt="" class="upiconstyle">
-                  <img id="cetacademicdown" src="assets/images/downarrow.svg" alt="" class="downiconstyle">
-                </div>
-              </button>
-              <div id="cetacademicpanel" class="subpanel">
-                <div class="chipaccexp">Missing ECG Signal Reconstruction</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Developed effective method in reconstructing the ECG signals.</li>
-                    <li> Supervised learning methods(neural networks) were used to fill in short missing segments in multi parameter ICU cardiovascular data using MATLAB.</li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">MATLAB</div>
-                        <div class="chipproj">Python</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
-
-                <div class="chipaccexp">Energy Efficient Assisted GPS</div>
-                <div>
-                  <ul style="list-style-type:disc;">
-                    <li> Developed a software to reduce power consumption of wearable GPS and cellular tracker devices.</li>
-                    <li> GPS history data collected were filtered, clustered and pruned to detect frequently visited locations and crucial locations (for path reconstruction purpose).</li>
-                    <li> A set of significant locations were obtained and transition probabilities were calculated.</li>
-                    <li>
-                      <div class="flexrow flexwrap">
-                        <div>Technologies: </div>
-                        <div class="chipproj">MATLAB</div>
-                        <div class="chipproj">Python</div>
-                      </div>
-                    </li>
-                  </ul> 
-                </div>
-              </div>
+    <!-- About Section -->
+    <section id="about" class="container section-animate">
+        <h2>About <span class="text-gradient">Me</span></h2>
+        <div class="glass-card">
+            <p style="line-height: 1.8; margin-bottom: 35px; font-size: 1.1rem; color: var(--text-primary);">
+                I am a Senior Full-Stack Software Engineer with 10+ years of experience building scalable, API-driven manufacturing and enterprise applications. My expertise includes CMMS-based maintenance systems, Statistical Process Control (SPC), real-time dashboards, ETL pipelines, and microservices-based, cloud-native solutions improving asset reliability, production planning, and efficiency.
+            </p>
+            
+            <h3 style="margin-bottom: 20px; color: var(--accent-color);"><i class="fa-solid fa-code"></i> Technical Arsenal</h3>
+            <div class="tech-stack">
+                <div class="chip">Typescript</div>
+                <div class="chip">C#</div>
+                <div class="chip">Go</div>
+                <div class="chip">HTML5</div>
+                <div class="chip">CSS3</div>
+                <div class="chip">Java</div>
+                <div class="chip">JavaScript</div>
+                <div class="chip">Python</div>
+                <div class="chip">MySQL</div>
+                <div class="chip">SQL Server</div>
+                <div class="chip">Clickhouse</div>
+                <div class="chip">Angular 2+</div>
+                <div class="chip">ASP.NET</div>
+                <div class="chip">MVC</div>
+                <div class="chip">Android SDK</div>
+                <div class="chip">RxJS</div>
+                <div class="chip">Plotly</div>
+                <div class="chip">WebSockets</div>
+                <div class="chip">Kubernetes</div>
+                <div class="chip">Entity Framework</div>
             </div>
-            <div id="Education" class="tabcontent">
-              <div class="panel">
-                  <span class="boldtext">EDUCATION</span>
-              </div>
-              <div style="height: 2vmin; width: 100%"></div>
-              <button id="ritpage" class="accordion" onclick="openLink(this)">
-                <div class="flexrow" style="width: 100%">
-                  <img src="assets/images/riticon.jpg" alt="" class="riticonstyle">
-                  <div class="chipacc">Rochester Institute of Technology</div>
-                </div>
-                <div style="margin-left: 12vmin; margin-bottom: 2vmin;">
-                  Master of Science, Computer Science
-                </div>
-                <div style="margin-left: 12vmin; margin-bottom: 1vmin;">
-                  2016 - 2018
-                </div>
-                <div style="margin-left: 12vmin">
-                  <div class="flexrow flexwrap">
-                    <div style="margin-top: 1.3vmin">GPA: </div>
-                    <div class="chipexp">3.82 / 4</div>
-                  </div>
-                </div>
-              </button>
-              <div style="height: 2vmin; width: 100%"></div>
-              <button id="cetpage" class="accordion" onclick="openLink(this)">
-                <div class="flexrow" style="width: 100%">
-                  <img src="assets/images/ceticon.png" alt="" class="ceticonstyle">
-                  <div class="chipacc">College of Engineering Trivandrum</div>
-                </div>
-                <div style="margin-left: 12vmin; margin-bottom: 2vmin;">
-                  Bachelor of Technology, Electronics and Communication Engineering
-                </div>
-                <div style="margin-left: 12vmin; margin-bottom: 1vmin;">
-                  2008 - 2012
-                </div>
-                <div style="margin-left: 12vmin">
-                  <div class="flexrow flexwrap">
-                    <div style="margin-top: 1.3vmin">GPA: </div>
-                    <div class="chipexp">7.47 / 10</div>
-                  </div>
-                </div>
-              </button>
-            </div>
-            <div id="ContactMe" class="tabcontent">
-              <div class="panel">
-                  <span class="boldtext">CONTACT ME</span>
-              </div>
-              <div style="padding: 3vmin">
-                  <!-- <span>Email: &nbsp;</span> -->
-                  <img src="assets/images/gmailicon.svg" alt="" class="gmailiconstyle"> &nbsp; </img>
-                  <a class="email" href="mailto:joetomjob@gmail.com?Subject=Hello%20Joe" target="_top">joetomjob@gmail.com</a>
-                  ,   
-                  <a class="email" href="mailto:jxj2428@g.rit.edu?Subject=Hello%20Joe" target="_top">jxj2428@g.rit.edu</a>
-              </div>
-              <div style="padding: 3vmin">
-                <img src="assets/images/phoneicon.svg" alt="" class="phoneiconstyle"> &nbsp; </img>
-                <a class="email" href="tel:+15856293116" target="_top"> +1 (585)-629-3116</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      
-      <script>
-          function sociaimageclick(event) {
-            if(event.id == 'githubicon'){
-              window.open("https://github.com/joetomjob", '_blank');
-            } else if(event.id == 'linkedinicon'){
-              window.open("https://www.linkedin.com/in/joetomjob/", '_blank');
-            } else if(event.id == 'fbicon'){
-              window.open("https://www.facebook.com/joetom.job", '_blank');
-            } else if(event.id == 'twittericon'){
-              window.open("https://twitter.com/joetomjob", '_blank');
-            } else if(event.id == 'resumeicon'){
-              window.open("assets/pdf/resume.pdf", '_blank');
-            }
-          }
+    </section>
 
-          function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");            
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
-          
-          function openLink(event) {
-            var i, tabcontent, tablinks;
-            if(event.id == 'studenthousing'){
-              window.open("https://github.com/joetomjob/iosGithub", '_blank');
-            } else if(event.id == 'ritpage') {
-              window.open("https://www.rit.edu/", '_blank');
-            } else if(event.id == 'cetpage') {
-              window.open("https://www.cet.ac.in/", '_blank');
-            }
+    <!-- Experience Section -->
+    <section id="experience" class="container section-animate">
+        <h2>Professional <span class="text-gradient">Journey</span></h2>
+        <div class="timeline">
+            <!-- Tesla -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Sep 2022 - Present</div>
+                <div class="glass-card">
+                    <h3 class="timeline-title">Sr Software Engineer</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> Tesla, Inc. | Austin, TX</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Statistical Process Control (SPC):</strong> Designed and implemented key features to enhance manufacturing data analysis, including specification limit definitions, rule-based alerts, and robust ETL pipelines for seamless data ingestion and transformation from multiple applications using Go, Angular 2+, Kafka, Python and MySQL.</li>
+                            <li>Developed interactive charts for real-time data visualization, enabling quick identification of deviations and informed decision-making.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-          }
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jan 2019 - Sep 2022</div>
+                <div class="glass-card">
+                    <h3 class="timeline-title">Software Engineer</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> Tesla, Inc. | San Francisco Bay Area</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Computerized Maintenance Management System(CMMS):</strong> Built a microservice-based SPA to track equipment status and manage maintenance requests utilizing Angular 2+, Go, C#, .NET Core, MySQL and SQL Server. Designed a reactive dashboard using websockets.</li>
+                            <li><strong>Field Engineering:</strong> Created a reactive dashboard using Angular 2+, Go, Clickhouse and MySQL to predict availability of battery packs and drive units. Automated deployments using Jenkins and Kubernetes.</li>
+                            <li><strong>Manufacturing Operations System:</strong> Developed an Android app for material management, and built single-page applications and reactive dashboards to orchestrate Model 3, battery, and solar workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-          function openAccordian(evt, accname){
-            var eltup = document.getElementById(accname+'up');
-            var eltdown = document.getElementById(accname+'down');
-            vareltpanel = document.getElementById(accname+'panel');
-            if(evt.currentTarget.className.includes('lightbackcolor')){
-              eltup.style.display = 'block';
-              eltdown.style.display = 'none';
-              vareltpanel.style.display = 'block';
-            } else {
-              eltup.style.display = 'none';
-              eltdown.style.display = 'block';
-              vareltpanel.style.display = 'none';
-            }
-            evt.currentTarget.classList.toggle("lightbackcolor");
-          }
-      </script>
-    </body>
-  </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">May 2018 - Aug 2018</div>
+                <div class="glass-card">
+                    <h3 class="timeline-title">Software Intern</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> Tesla, Inc. | San Francisco Bay Area</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Developed an Android application for the Material Management System (MOS) which is used in Fremont, Gigafactory Nevada, Gigafactory 2 Buffalo, and Ireland.</li>
+                            <li>Worked as part of the factory software front-end team creating the Manufacturing Operations System.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jun 2017 - Jan 2018</div>
+                <div class="glass-card">
+                    <h3 class="timeline-title">Software Intern</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> Tesla, Inc. | San Francisco Bay Area</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Developed an Android application for material management application(MOS).</li>
+                            <li>Developed Functional Test Automation Framework using Selenium for manufacturing applications (MOS, MES, MMS) used for the production of Model S, X, and 3.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIT -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Aug 2016 - Dec 2018</div>
+                <div class="glass-card">
+                    <h3 class="timeline-title">Graduate Research Assistant</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> Rochester Institute of Technology | Rochester, NY</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Aug 2018 - Dec 2018:</strong> Improved an API recommendation tool utilizing Statistical learning to study from repetitive code changes and fine-grained changes to predict APIs.</li>
+                            <li><strong>Jan 2018 - May 2018:</strong> Developed the initial API recommendation tool leveraging Statistical learning.</li>
+                            <li><strong>Jan 2017 - Jun 2017:</strong> Implemented a new protocol for network communication for an NSF-funded project. Designed IP packet forwarding algorithms and cleaned up the entire stack.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cognizant -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jan 2014 - Jul 2016</div>
+                <div class="glass-card">
+                    <h3 class="timeline-title">Associate</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> Cognizant Technology Solutions | Kochi, India</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Designed and developed an end-to-end visa processing website for Cognizant using ASP.NET, C#.</li>
+                            <li>Developed WCF Web services to transfer data across different teams and implemented features using third-party APIs (FedEx, Novacode).</li>
+                            <li>Created and tuned SQL queries for the project.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Nov 2012 - Jan 2014</div>
+                <div class="glass-card">
+                    <h3 class="timeline-title">Programmer Analyst</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> Cognizant Technology Solutions | Kochi, India</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Designed and developed a website for resource allocation and optimization of all Cognizant employees.</li>
+                            <li>Developed RDLC reports and created complex queries for the reports.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container section-animate">
+        <h2>My <span class="text-gradient">Education</span></h2>
+        <div class="grid-container">
+            <!-- RIT -->
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-color);"></i> M.S. Computer Science</h3>
+                <h4 style="margin-bottom: 15px; color: var(--text-secondary);">Rochester Institute of Technology</h4>
+                <p>Aug 2016 - Dec 2018 | GPA: 3.82 / 4.0</p>
+                <p style="margin-top: 15px; font-size: 0.95rem; line-height: 1.6;">Core Areas: Artificial Intelligence and Big Data. Worked as a Graduate Research Assistant developing API recommendation tools using Statistical Learning.</p>
+            </div>
+
+            <!-- CET -->
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-color);"></i> B.Tech Electronics & Communication</h3>
+                <h4 style="margin-bottom: 15px; color: var(--text-secondary);">College of Engineering Trivandrum, University of Kerala</h4>
+                <p>Aug 2008 - May 2012 | GPA: 7.47 / 10</p>
+                <p style="margin-top: 15px; font-size: 0.95rem; line-height: 1.6;">Focused on embedded systems, hardware design, and foundational engineering principles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>My <span class="text-gradient">Projects</span></h2>
+        <div class="grid-container">
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-vr-cardboard" style="color: var(--accent-color);"></i> Autism Study using VR</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">Examined the impact of social stimuli on physiological and behavioral regulation in children with and without ASD. Created an original 360 film with spatial audio simulating a play group.</p>
+                <div class="tech-stack" style="margin-top: 20px;">
+                    <div class="chip">Unity</div>
+                    <div class="chip">Ricoh Theta V</div>
+                    <div class="chip">Oculus Go</div>
+                </div>
+            </div>
+
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-film" style="color: var(--accent-color);"></i> Movie Insights</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">Proposed a predictive model leveraging supervised learning over the IMDb dataset combined with an external movie awards dataset to predict overall movie ratings.</p>
+            </div>
+
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-house" style="color: var(--accent-color);"></i> Student Housing</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">An iOS application developed in Swift acting as a platform for students looking for housing, handling rent, sublet, and roommate requests.</p>
+                <div class="tech-stack" style="margin-top: 20px;">
+                    <div class="chip">Swift</div>
+                    <div class="chip">iOS</div>
+                </div>
+            </div>
+
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-network-wired" style="color: var(--accent-color);"></i> Multi Node Label Routing</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">Implemented a new protocol for network communication for an NSF funded project. Designed IP packet forwarding algorithms.</p>
+                <div class="tech-stack" style="margin-top: 20px;">
+                    <div class="chip">C</div>
+                    <div class="chip">Python</div>
+                    <div class="chip">Linux</div>
+                    <div class="chip">GENI</div>
+                    <div class="chip">Emulab</div>
+                </div>
+            </div>
+
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-utensils" style="color: var(--accent-color);"></i> Food Recommender System</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">Developed a robust system achieving over 87% accuracy in suggesting correct food items using data analysis models.</p>
+                <div class="tech-stack" style="margin-top: 20px;">
+                    <div class="chip">Rattle</div>
+                    <div class="chip">PostgreSQL</div>
+                    <div class="chip">Java</div>
+                    <div class="chip">Spring</div>
+                    <div class="chip">Pandas</div>
+                </div>
+            </div>
+
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-microphone-lines" style="color: var(--accent-color);"></i> Gender Recognition</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">Applied Machine Learning on acoustic properties of voice to predict gender, achieving over 97% accuracy using a Random Forest model.</p>
+                <div class="tech-stack" style="margin-top: 20px;">
+                    <div class="chip">Python</div>
+                    <div class="chip">Sci-kit</div>
+                    <div class="chip">Numpy</div>
+                    <div class="chip">Pandas</div>
+                </div>
+            </div>
+
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-heart-pulse" style="color: var(--accent-color);"></i> Missing ECG Reconstruction</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">Used supervised learning (neural networks) to fill in short missing segments in multi-parameter ICU cardiovascular data using MATLAB.</p>
+                <div class="tech-stack" style="margin-top: 20px;">
+                    <div class="chip">MATLAB</div>
+                    <div class="chip">Neural Networks</div>
+                </div>
+            </div>
+
+            <div class="glass-card project-card">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;"><i class="fa-solid fa-location-dot" style="color: var(--accent-color);"></i> Energy Efficient GPS</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">Developed software to reduce power consumption of wearable GPS trackers. Filtered and clustered data to calculate transition probabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container section-animate" style="min-height: 60vh; text-align: center;">
+        <h2>Get In <span class="text-gradient">Touch</span></h2>
+        <p style="max-width: 600px; margin: 0 auto 40px auto; color: var(--text-secondary); line-height: 1.6; font-size: 1.1rem;">
+            I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        </p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="mailto:joetomjob@gmail.com" class="contact-link">
+                <i class="fa-solid fa-envelope"></i> joetomjob@gmail.com
+            </a>
+            <a href="tel:+15856293116" class="contact-link">
+                <i class="fa-solid fa-phone"></i> +1 (585) 629-3116
+            </a>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px 0; border-top: 1px solid var(--card-border); margin-top: 50px;">
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Designed & Built for Joe Tom Job.
+        </p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
 </html>
